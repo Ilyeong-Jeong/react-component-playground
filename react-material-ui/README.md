@@ -1,7 +1,7 @@
 # react-material-ui
 **React Material UI Component Playground**
 
-## Used Framework & Library
+## References
 - [Material-UI](https://material-ui.com/getting-started/installation/)
 
 ## Usage
