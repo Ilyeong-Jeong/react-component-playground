@@ -1,5 +1,5 @@
-# react-component-playground
-**React Component Framework & Library Playground**
+# react-material-ui
+**React Material UI Component Playground**
 
 ## Used Framework & Library
 - [Material-UI](https://material-ui.com/getting-started/installation/)
