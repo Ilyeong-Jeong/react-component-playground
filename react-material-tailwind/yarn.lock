@@ -332,7 +332,7 @@
   resolved "https://registry.yarnpkg.com/@isaacs/string-locale-compare/-/string-locale-compare-1.1.0.tgz#291c227e93fd407a96ecd59879a35809120e432b"
   integrity sha512-SQ7Kzhh9+D+ZW9MA0zkYv3VXhIDNx+LzM6EJ+/65I3QY+enU6Itte7E5XX7EWrqLW2FN4n06GWzBnPoC3th2aQ==
 
-"@material-tailwind/react@0.3.4":
+"@material-tailwind/react@^0.3.4":
   version "0.3.4"
   resolved "https://registry.yarnpkg.com/@material-tailwind/react/-/react-0.3.4.tgz#aaccb84d6b1dbe7a3cb790b6c8d4209081e031c0"
   integrity sha512-ri5nMD6Wv4WT5x+3B3jt1A8ZwHijprY8R3EmI5eXnmCNe+Wzyn0AeKcB6IIHhP7fcZVMjSpMBrn5XO700LhO5Q==
