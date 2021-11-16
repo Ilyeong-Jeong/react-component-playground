@@ -4,6 +4,7 @@
 ## References
 - [Tailwind CSS](https://tailwindcss.com/docs)
 - [Styled Components](https://styled-components.com/docs)
+- [daisyUI](https://daisyui.com/docs/install)
 
 ## Usage
 **Install dependencies**

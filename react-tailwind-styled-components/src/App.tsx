@@ -6,7 +6,11 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 const Button = styled.button`
-  ${tw`w-24 h-8 bg-black text-white`}
+  ${tw`w-24 h-8 bg-black text-white text-base`}
+`;
+
+const DaisyButton = styled.button`
+  ${tw`btn btn-primary`}
 `;
 
 function App() {
@@ -21,29 +25,11 @@ function App() {
           <button type="button" onClick={() => setCount((count) => count + 1)}>
             count is: {count}
           </button>
-          <Button>Test</Button>
+          <Button>Tailwind</Button>
+          <DaisyButton>daisyUI Button</DaisyButton>
         </p>
         <p>
           Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
         </p>
       </header>
     </div>
