@@ -3,8 +3,10 @@ import cx from 'classnames';
 
 function TabItem(props: {
   className?: string;
+  preset?: 'default' | 'primary' | 'black';
   active?: boolean;
   disabled?: boolean;
+  value?: any;
   children: React.ReactNode;
   onClick?: (e: MouseEvent) => void;
 }) {
@@ -14,9 +16,17 @@ function TabItem(props: {
     }
   };
 
+  const themeCls = (() => {
+    return {
+      default: '',
+      primary: 'tab-item-primary',
+      black: 'tab-item-black',
+    }[props.preset || 'default'];
+  })();
+
   return (
     <div
-      className={cx('tab-item', props.className, {
+      className={cx(`tab-item ${themeCls}`, props.className, {
         'tab-active': props.active,
         'tab-disabled': props.disabled,
       })}

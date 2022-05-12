@@ -1,47 +1,170 @@
+// .tabs {
+// 	@apply w-full h-full relative;
+// 	@apply flex items-center;
+
+// 	&.tab-bordered {
+// 		@apply border-b border-white border-opacity-30;
+// 	}
+
+// 	.tab-left {
+// 		@apply h-full flex flex-1 justify-start items-center;
+// 	}
+
+// 	.tab-center {
+// 		@apply h-full flex flex-auto justify-center items-center;
+// 	}
+
+// 	.tab-right {
+// 		@apply h-full flex flex-1 justify-end items-center;
+// 	}
+
+// 	.tab-item {
+// 		@apply h-full text-white cursor-pointer opacity-30;
+// 		@apply flex justify-center items-center;
+
+// 		&.tab-active {
+// 			@apply opacity-100;
+// 		}
+
+// 		&.tab-disabled {
+// 			@apply pointer-events-none;
+// 		}
+// 	}
+
+// 	.tab-slider {
+// 		@apply absolute w-full h-1 bg-white;
+// 		transition: (width, left) 0.25s ease;
+
+// 		&.tab-small {
+// 			@apply h-0.5;
+// 		}
+
+// 		&.tab-none {
+// 			@apply hidden;
+// 		}
+// 	}
+// }
+
 .tabs {
-	@apply w-full h-full relative;
-	@apply flex items-center;
+  @apply w-full h-full relative;
+  @apply flex items-center flex-nowrap;
 
-	&.tab-bordered {
-		@apply border-b border-white border-opacity-30;
-	}
+  &.tab-bordered {
+    @apply border-b border-white border-opacity-50;
+  }
 
-	.tab-left {
-		@apply h-full flex flex-1 justify-start items-center;
-	}
+  &.tab-black {
+    &.tab-bordered {
+      @apply border-b border-mono7 border-opacity-20;
+    }
 
-	.tab-center {
-		@apply h-full flex flex-auto justify-center items-center;
-	}
+    .tab-slider {
+      @apply bg-black1;
+    }
+  }
 
-	.tab-right {
-		@apply h-full flex flex-1 justify-end items-center;
-	}
+  &.tab-primary {
+    &.tab-bordered {
+      @apply border-b border-mono3 border-opacity-50;
+    }
 
-	.tab-item {
-		@apply h-full text-white cursor-pointer opacity-30;
-		@apply flex justify-center items-center;
+    .tab-slider {
+      @apply bg-secondary;
+    }
+  }
 
-		&.tab-active {
-			@apply opacity-100;
-		}
+  &.tab-top {
+    &.tab-bordered {
+      @apply border-t border-b-0 border-white border-opacity-50;
+    }
+  }
 
-		&.tab-disabled {
-			@apply pointer-events-none;
-		}
-	}
+  &.tab-sm {
+    .tab-slider {
+      @apply h-px;
+    }
 
-	.tab-slider {
-		@apply absolute w-full h-1 bg-white;
-		transition: (width, left) 0.25s ease;
+    .tab-item {
+      &.tab-active {
+        @apply font-medium;
+      }
+    }
+  }
 
-		&.tab-small {
-			@apply h-0.5;
-		}
+  &.tab-md {
+    .tab-slider {
+      @apply h-0.5;
+    }
 
-		&.tab-none {
-			@apply hidden;
-		}
-	}
+    .tab-item {
+      &.tab-active {
+        @apply font-bold;
+      }
+    }
+  }
+
+  .tab-left {
+    @apply h-full flex flex-1 justify-start items-center;
+  }
+
+  .tab-center {
+    @apply h-full flex w-full flex-auto justify-center items-center;
+  }
+
+  .tab-right {
+    @apply h-full flex flex-1 justify-end items-center;
+  }
+
+  .tab-item {
+    @apply h-full text-white font-medium cursor-pointer;
+    @apply flex justify-center items-center;
+
+    &.tab-active {
+      @apply opacity-100 font-medium;
+    }
+
+    &.tab-disabled {
+      @apply pointer-events-none;
+    }
+  }
+
+  .tab-item-primary {
+    @apply h-full text-mono3 font-medium cursor-pointer;
+
+    &.tab-active {
+      @apply text-secondary opacity-100 font-bold;
+    }
+
+    &.tab-disabled {
+      @apply pointer-events-none;
+    }
+  }
+
+  .tab-item-black {
+    @apply h-full text-black3 font-medium cursor-pointer;
+
+    &.tab-bordered {
+      @apply border-b border-mono7 border-opacity-20;
+    }
+
+    &.tab-active {
+      @apply text-black opacity-100 font-medium cursor-default;
+    }
+
+    &.tab-disabled {
+      @apply pointer-events-none;
+    }
+  }
+
+  .tab-slider {
+    @apply absolute h-1 bg-white rounded-d-xl;
+
+    &.transition {
+      transition: (width, left) 0.25s ease;
+    }
+
+    &.tab-none {
+      @apply hidden;
+    }
+  }
 }
-  
