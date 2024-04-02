@@ -33,6 +33,7 @@ function App() {
         <Button variant="grey" size="md">btn1</Button>
         <Button variant="red" size="lg">btn2</Button>
         <Button size="xl">btn3</Button>
+        <Button size="xl" isBlue>btn4</Button>
       </div>
     </>
   )

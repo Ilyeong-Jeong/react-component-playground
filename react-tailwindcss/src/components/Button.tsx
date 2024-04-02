@@ -21,10 +21,15 @@ export const ButtonVariants = cva(
         lg: 'px-6 py-3 text-lg',
         xl: 'px-8 py-4 text-xl',
       },
+      isBlue: {
+        true: 'bg-[#3b5fd9]',
+        false: '',
+      },
     },
     defaultVariants: {
       variant: 'default',
       size: 'default',
+      isBlue: false,
     },
   },
 );
@@ -34,9 +39,9 @@ interface ButtonProps extends VariantProps<typeof ButtonVariants> {
   children?: React.ReactNode;
 }
 
-function Button({ variant, size, className, children }: ButtonProps) {
+function Button({ variant, size, isBlue, className, children }: ButtonProps) {
   return (
-    <button className={cn(ButtonVariants({ variant, size, className }))}>
+    <button className={cn(ButtonVariants({ variant, size, isBlue, className }))}>
       {children && children}
     </button>
   );
