@@ -1,11 +1,11 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Button from './components/Button'
+import { useState } from 'react';
+import reactLogo from './assets/react.svg';
+import viteLogo from '/vite.svg';
+import './App.css';
+import Button from './components/Button';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -29,14 +29,20 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <div className='space-y-2'>
-        <Button variant="grey" size="md">btn1</Button>
-        <Button variant="red" size="lg">btn2</Button>
+      <div className="space-y-2">
+        <Button variant="grey" size="md">
+          btn1
+        </Button>
+        <Button variant="red" size="lg">
+          btn2
+        </Button>
         <Button size="xl">btn3</Button>
-        <Button size="xl" isBlue>btn4</Button>
+        <Button size="xl" isBlue>
+          btn4
+        </Button>
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
